@@ -1,9 +1,10 @@
 import "./App.css";
+import { Box } from "@chakra-ui/react";
 
 function App() {
   return (
     <>
-      <div>Landly landing page</div>
+      <Box>Landly landing page</Box>
     </>
   );
 }
