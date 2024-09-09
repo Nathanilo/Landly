@@ -1,10 +1,13 @@
 import "./App.css";
 import { Box } from "@chakra-ui/react";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <Box>Landly landing page</Box>
+      <Box>
+        <Navbar />
+      </Box>
     </>
   );
 }
