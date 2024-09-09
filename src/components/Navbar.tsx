@@ -9,7 +9,17 @@ const links = [
 
 const Navbar = () => {
   return (
-    <Box as="nav" px={["8", "8", "20"]} py="8" mx="auto">
+    <Box
+      as="nav"
+      px={["8", "8", "20"]}
+      py="8"
+      mx="auto"
+      position="fixed"
+      left="0"
+      right="0"
+      background="#ffffff"
+      zIndex="100"
+    >
       <Flex justify="space-between" align="center">
         <Box>
           <Link
@@ -42,7 +52,7 @@ const Navbar = () => {
           </HStack>
         </Box>
         <Box>
-          <Button bg="#007BFF" color="#ffffff">
+          <Button bg="#007BFF" color="#ffffff" _hover={{ bg: "#007BFF" }}>
             Get Started
           </Button>
         </Box>
