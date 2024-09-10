@@ -28,7 +28,7 @@ const FeaturedProjects: React.FC = () => {
       });
       setTabs(updatedTabs);
     }
-  }, [data]);
+  }, []);
 
   return (
     <Box px={["8", "8", "20"]}>
