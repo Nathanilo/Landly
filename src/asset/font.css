@@ -4,35 +4,35 @@
   font-family: "PP Neue Montreal Book";
   font-style: normal;
   font-weight: normal;
-  src: url("../../src/Assets/fonts/ppneuemontreal-book.woff") format("woff");
+  src: url("../../src/asset/fonts/ppneuemontreal-book.woff") format("woff");
 }
 
 @font-face {
   font-family: "PP Neue Montreal Italic";
   font-style: normal;
   font-weight: normal;
-  src: url("../../src/Assets/fonts/ppneuemontreal-italic.woff") format("woff");
+  src: url("../../src/asset/fonts/ppneuemontreal-italic.woff") format("woff");
 }
 
 @font-face {
   font-family: "PP Neue Montreal Thin";
   font-style: normal;
   font-weight: normal;
-  src: url("../../src/Assets/fonts/ppneuemontreal-thin.woff") format("woff");
+  src: url("../../src/asset/fonts/ppneuemontreal-thin.woff") format("woff");
 }
 
 @font-face {
   font-family: "PP Neue Montreal Medium";
   font-style: normal;
   font-weight: normal;
-  src: url("../../src/Assets/fonts/ppneuemontreal-medium.woff") format("woff");
+  src: url("../../src/asset/fonts/ppneuemontreal-medium.woff") format("woff");
 }
 
 @font-face {
   font-family: "PP Neue Montreal SemiBold italic";
   font-style: normal;
   font-weight: normal;
-  src: url("../../src/Assets/fonts/ppneuemontreal-semibolditalic.woff")
+  src: url("../../src/asset/fonts/ppneuemontreal-semibolditalic.woff")
     format("woff");
 }
 
@@ -40,5 +40,5 @@
   font-family: "PP Neue Montreal Bold";
   font-style: normal;
   font-weight: normal;
-  src: url("../../src/Assets/fonts/ppneuemontreal-bold.woff") format("woff");
+  src: url("../../src/asset/fonts/ppneuemontreal-bold.woff") format("woff");
 }

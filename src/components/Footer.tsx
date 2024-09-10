@@ -1,6 +1,6 @@
 import { Box, Text, Flex, HStack, Link } from "@chakra-ui/react";
 import React from "react";
-import { linkedin, facebook, instagram, twitter } from "../assets";
+import { linkedin, facebook, instagram, twitter } from "../asset";
 
 const Socials = [
   {

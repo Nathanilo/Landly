@@ -1,5 +1,5 @@
 import React from "react";
-import { arrowLeft, arrowRight } from "../assets";
+import { arrowLeft, arrowRight } from "../asset";
 import { Button, Flex, Image } from "@chakra-ui/react";
 
 const Navigation: React.FC = () => {

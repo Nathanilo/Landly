@@ -1,6 +1,6 @@
 import { Box, Flex, Text, HStack, Image } from "@chakra-ui/react";
 import React from "react";
-import { bed, heart, shower, location, roomImage } from "../assets";
+import { bed, heart, shower, location, roomImage } from "../asset";
 import { TRoomData } from "../types";
 
 interface ProjectCardProps {
