@@ -14,7 +14,7 @@ const FeaturedProjects: React.FC = () => {
   useEffect(() => {
     if (data.length > 0) {
       const updatedTabs = [...tabs];
-      data.forEach((newRoom) => {
+      data.forEach((newRoom:TRoomData) => {
         const existingTabIndex = updatedTabs.findIndex(
           (tab) => tab.title === newRoom.title
         );
