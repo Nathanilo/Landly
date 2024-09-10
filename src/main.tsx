@@ -6,6 +6,11 @@ import App from "./App.tsx";
 import "./index.css";
 
 const theme = extendTheme({
+  global: {
+    body: {
+      "fontFamily": "PP Neue Montreal Thin, sans-serif",
+    },
+  },
   colors: {
     primary: "#007BFF",
   },

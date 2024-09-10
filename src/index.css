@@ -1,5 +1,7 @@
 @import "./Assets/font.css";
 
-html {
-  font-family: "PP Neue Montreal Thin", sans-serif;
+html,
+body {
+  font-family: "PP Neue Montreal Thin", sans-serif !important;
 }
+
