@@ -12,8 +12,8 @@ export const data: TRoomData[] = [
   {
     id: 2,
 
-    title: "Geradines Heights",
-    location: "Ikeja, Lagos",
+    title: "Orchid Heights",
+    location: "Surelere, Lagos",
     noOfBath: 4,
     noOfBed: 3,
   },
@@ -21,7 +21,7 @@ export const data: TRoomData[] = [
     id: 3,
 
     title: "Geradines Heights",
-    location: "Ikeja, Lagos",
+    location: "Surulere, Lagos",
     noOfBath: 4,
     noOfBed: 3,
   },

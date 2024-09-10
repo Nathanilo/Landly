@@ -46,8 +46,8 @@ export const SideBar: React.FC<{
         </DrawerHeader>
         <DrawerBody marginTop="4">
           <VStack align="flex-start">
-            {links.map((link) => (
-              <Flex align="center" marginTop="4">
+            {links.map((link,id) => (
+              <Flex align="center" marginTop="4" key={id}>
                 <Link
                   href={link.href}
                   _hover={{ textDecoration: "none" }}
@@ -105,13 +105,14 @@ const Navbar: React.FC = () => {
           </Box>
           <Box display={["none", "none", "flex"]} mx="5">
             <HStack>
-              {links.map((link) => (
-                <Flex align="center" marginRight={["2", "2", "6"]}>
+              {links.map((link,id) => (
+                <Flex align="center" marginRight={["2", "2", "6"]} key={id}>
                   <Link
                     href={link.href}
                     _hover={{ textDecoration: "none" }}
+                    fontSize="sm"
                     fontWeight="600"
-                    paddingRight="1"
+                    paddingRight={["0.5", "0.5", "0.5", "0.5", "2", "2"]}
                   >
                     {link.name}
                   </Link>
@@ -121,7 +122,11 @@ const Navbar: React.FC = () => {
             </HStack>
           </Box>
           <Box>
-            <Button bg="#007BFF" color="#ffffff" _hover={{ bg: "primary" }}>
+            <Button
+              bg="#007BFF"
+              color="#ffffff"
+              _hover={{ bg: "#ffffff", color: "#000000", border: "1px" }}
+            >
               Get Started
             </Button>
           </Box>

@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
         paddingTop="104px"
         display="flex"
         color="white"
-        fontWeight="bold"
+        fontWeight="900"
         textAlign="left"
         position="relative"
         isolation="isolate"
@@ -24,16 +24,27 @@ const Hero: React.FC = () => {
           inset="0"
           zIndex="-1"
         ></Box>
-        <Flex flexDirection="column" padding={["5", "10", "20"]}>
+        <Flex
+          flexDirection="column"
+          padding={["5", "10", "20"]}
+          justifyContent={["center", "center", "flex-start"]}
+        >
           <Text
             as="h1"
             marginTop="15"
-            maxW={["100%", "100%", "90%"]}
-            fontSize={["3xl", "4xl", "6xl"]}
+            maxW={["100%", "100%", "100%"]}
+            lineHeight={["1.2", "1.2", "1.1"]}
+            fontSize={["4xl", "4xl", "6xl", "", "8xl"]}
           >
             Exceptional Real Estate Projects By Leading Developers
           </Text>
-          <Text as="p" py="14" maxW="720px">
+          <Text
+            as="p"
+            py="14"
+            maxW="800px"
+            lineHeight={["1.5", "1.5", "2.0"]}
+            fontSize={["md", "md", "lg", "", "xl"]}
+          >
             Explore premier real estate developments from top professionals,
             featuring luxurious condos, serene retreats, and cutting-edge
             commercial spaces. Experience the finest craftsmanship, innovative
