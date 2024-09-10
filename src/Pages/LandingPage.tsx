@@ -1,11 +1,11 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import Navbar from "../Components/Navbar.tsx";
-import Hero from "../Components/Hero.tsx";
-import FeaturedProjects from "../Components/FeaturedProjects.tsx";
-import TopDevelopers from "../Components/TopDevelopers.tsx";
-import Testimonials from "../Components/Testimonials.tsx";
-import Footer from "../Components/Footer.tsx";
+import Navbar from "../components/Navbar.tsx";
+import Hero from "../components/Hero.tsx";
+import FeaturedProjects from "../components/FeaturedProjects.tsx";
+import TopDevelopers from "../components/TopDevelopers.tsx";
+import Testimonials from "../components/Testimonials.tsx";
+import Footer from "../components/Footer.tsx";
 
 const LandingPage:React.FC = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
-import { heroImage } from "../Assets";
+import { heroImage } from "../assets";
 
 const Hero: React.FC = () => {
   return (

@@ -4,7 +4,7 @@ import { Box, Text, Grid, Button, Flex } from "@chakra-ui/react";
 import { Tabs, TabList, Tab } from "@chakra-ui/react";
 import SearchBar from "./SearchBar";
 import ProjectCard from "./ProjectCard";
-import { data } from "../DummyData/data";
+import { data } from "../dummyData/data";
 import { TRoomData } from "../types";
 import { TTabCount } from "../types";
 

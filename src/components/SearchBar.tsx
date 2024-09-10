@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import React from "react";
-import { filter, search } from "../Assets";
+import { filter, search } from "../assets";
 
 const SearchBar: React.FC = () => {
   const [searchStr, setSearchStr] = useState<string>("");

@@ -1,5 +1,5 @@
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
-import { roomImage } from "../Assets";
+import { roomImage } from "../assets";
 import React from "react";
 import { TTopDeveloper } from "../types";
 import Navigation from "./Navigation";
