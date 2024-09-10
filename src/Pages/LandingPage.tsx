@@ -4,6 +4,7 @@ import Hero from "../Components/Hero";
 import FeaturedProjects from "../Components/FeaturedProjects";
 import TopDevelopers from "../Components/TopDevelopers";
 import Testimonials from "../Components/Testimonials";
+import Footer from "../Components/Footer";
 
 const LandingPage = () => {
   return (
@@ -13,6 +14,7 @@ const LandingPage = () => {
       <FeaturedProjects />
       <TopDevelopers />
       <Testimonials />
+      <Footer />
     </Box>
   );
 };

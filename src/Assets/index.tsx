@@ -8,6 +8,10 @@ import bed from "./images/bed.svg";
 import location from "./images/location.svg";
 import arrowRight from "./images/arrow-right.svg";
 import arrowLeft from "./images/arrow-left.svg";
+import facebook from "./images/facebook.svg";
+import instagram from "./images/instagram.svg";
+import twitter from "./images/twitter.svg";
+import linkedin from "./images/linkedin.svg";
 
 export {
   heroImage,
@@ -20,4 +24,8 @@ export {
   location,
   arrowRight,
   arrowLeft,
+  facebook,
+  instagram,
+  twitter,
+  linkedin,
 };
