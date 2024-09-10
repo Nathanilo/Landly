@@ -4,7 +4,7 @@ import React from "react";
 
 const TopDevelopers: React.FC = () => {
   return (
-    <Box paddingTop="10" paddingBottom="10" px="20">
+    <Box paddingTop="10" paddingBottom="10" px={["8", "8", "20"]}>
       <Text as="h2" paddingTop="12" fontWeight="600" fontSize="26">
         Top Real Estate Developers
       </Text>

@@ -4,7 +4,7 @@ import { arrowLeft, arrowRight } from "../Assets";
 
 const Testimonials: React.FC = () => {
   return (
-    <Box px="20" py="5">
+    <Box px={["8", "8", "20"]} py="5">
       <Text as="h2" textAlign="center" fontWeight="600" fontSize="26">
         Testimonials
       </Text>

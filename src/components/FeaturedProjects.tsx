@@ -2,12 +2,12 @@ import React from "react";
 import { Box, Text, Grid, Button, Flex } from "@chakra-ui/react";
 import SearchBar from "./SearchBar";
 import ProjectCard from "./ProjectCard";
-import { data } from "../DummyData/Data";
+import { data } from "../DummyData/data";
 import { TRoomData } from "../types";
 
 const FeaturedProjects: React.FC = () => {
   return (
-    <Box px="20">
+    <Box px={["8", "8", "20"]}>
       <Box paddingTop="10">
         <SearchBar />
       </Box>
