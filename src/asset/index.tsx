@@ -1,6 +1,6 @@
 import heroImage from "./images//Hero-image.jpeg";
 import roomImage from "./images/room.jpg";
-import filter from "./images/filter.svg";
+import filter from "./images/Filter.svg";
 import search from "./images/search.svg";
 import heart from "./images/heart.svg";
 import shower from "./images/shower.svg";
