@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
               padding="10px"
               borderRadius="50%"
             >
-              <img src={social.icon} alt={social.name} />
+              <img src={social.icon} alt={social.name} loading="lazy" />
             </Link>
           ))}
         </HStack>

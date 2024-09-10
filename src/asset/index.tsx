@@ -1,5 +1,5 @@
-import heroImage from "./images//Hero-image.jpeg";
-import roomImage from "./images/room.jpg";
+import heroImage from "./images//Hero-image.webp";
+import roomImage from "./images/room.webp";
 import filter from "./images/Filter.svg";
 import search from "./images/search.svg";
 import heart from "./images/heart.svg";

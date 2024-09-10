@@ -28,6 +28,7 @@ const SearchBar: React.FC = () => {
         width="20px"
         height="20px"
         zIndex="10"
+        loading="lazy"
       />
       <InputGroup
         display="flex"
@@ -69,7 +70,13 @@ const SearchBar: React.FC = () => {
             width="10px"
             height="30px"
           >
-            <Image src={filter} alt="filter" width="24px" height="24px" />
+            <Image
+              src={filter}
+              alt="filter"
+              width="24px"
+              height="24px"
+              loading="lazy"
+            />
           </Button>
         </InputRightElement>
       </InputGroup>

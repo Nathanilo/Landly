@@ -17,6 +17,7 @@ const Hero: React.FC = () => {
         textAlign="left"
         position="relative"
         isolation="isolate"
+       
       >
         <Box
           background="rgba(0,0,0,0.6)"
@@ -34,7 +35,7 @@ const Hero: React.FC = () => {
             marginTop="15"
             maxW={["100%", "100%", "100%"]}
             lineHeight={["1.2", "1.2", "1.1"]}
-            fontSize={["4xl", "4xl", "6xl", "", "8xl"]}
+            fontSize={["4xl", "4xl", "6xl", "", "", "8xl"]}
           >
             Exceptional Real Estate Projects By Leading Developers
           </Text>
@@ -43,7 +44,7 @@ const Hero: React.FC = () => {
             py="14"
             maxW="800px"
             lineHeight={["1.5", "1.5", "2.0"]}
-            fontSize={["md", "md", "lg", "", "xl"]}
+            fontSize={["lg", "lg", "lg", "", "xl"]}
           >
             Explore premier real estate developments from top professionals,
             featuring luxurious condos, serene retreats, and cutting-edge
@@ -57,6 +58,7 @@ const Hero: React.FC = () => {
             height="64px"
             border="1px"
             borderRadius="72px"
+            flexShrink="0"
             _hover={{ bg: "#ffffff", color: "#000000" }}
           >
             Explore

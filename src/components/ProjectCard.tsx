@@ -31,6 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ room }) => {
           width="100%"
           height="385px"
           objectFit="cover"
+          loading="lazy"
         />
       </Box>
       <Box paddingTop="1">
