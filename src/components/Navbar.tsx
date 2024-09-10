@@ -1,4 +1,5 @@
 import { Box, Flex, Button, Link, HStack } from "@chakra-ui/react";
+import React from "react";
 
 const links = [
   { name: "Solutions", href: "#", hasIcon: true },
@@ -7,7 +8,7 @@ const links = [
   { name: "Resources", href: "#", hasIcon: false },
 ];
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <Box
       as="nav"
@@ -52,7 +53,7 @@ const Navbar = () => {
           </HStack>
         </Box>
         <Box>
-          <Button bg="#007BFF" color="#ffffff" _hover={{ bg: "#007BFF" }}>
+          <Button bg="#007BFF" color="#ffffff" _hover={{ bg: "primary" }}>
             Get Started
           </Button>
         </Box>

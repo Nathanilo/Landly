@@ -1,7 +1,8 @@
+import React from "react";
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import { heroImage } from "../Assets";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <Box>
       <Box
@@ -26,19 +27,17 @@ const Hero = () => {
         <Flex flexDirection="column" padding={["5", "10", "20"]}>
           <Text
             as="h1"
-            marginTop="20"
+            marginTop="15"
             maxW={["100%", "100%", "90%"]}
             fontSize={["3xl", "4xl", "6xl"]}
           >
             Exceptional Real Estate Projects By Leading Developers
           </Text>
-          <Text as="p" py="14">
+          <Text as="p" py="14" maxW="720px">
             Explore premier real estate developments from top professionals,
-            featuring luxurious condos,
-            <br /> serene retreats, and cutting-edge commercial spaces.
-            Experience the finest craftsmanship,
-            <br /> innovative designs, and unmatched quality by renowned
-            developers.
+            featuring luxurious condos, serene retreats, and cutting-edge
+            commercial spaces. Experience the finest craftsmanship, innovative
+            designs, and unmatched quality by renowned developers.
           </Text>
           <Button
             bg="transparent"
@@ -47,7 +46,7 @@ const Hero = () => {
             height="64px"
             border="1px"
             borderRadius="72px"
-            _hover={{ bg: "#ffffff", color:"#000000" }}
+            _hover={{ bg: "#ffffff", color: "#000000" }}
           >
             Explore
           </Button>

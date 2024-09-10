@@ -1,14 +1,13 @@
 import "./App.css";
 import { Box } from "@chakra-ui/react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+
+import LandingPage from "./Pages/LandingPage";
 
 function App() {
   return (
     <>
       <Box>
-        <Navbar />
-        <Hero />
+        <LandingPage />
       </Box>
     </>
   );
