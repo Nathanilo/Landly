@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Box, Text, Grid, Button, Flex } from "@chakra-ui/react";
 import { Tabs, TabList, Tab } from "@chakra-ui/react";
 import SearchBar from "./SearchBar";
@@ -10,11 +9,13 @@ import { TTabCount } from "../types";
 
 const FeaturedProjects: React.FC = () => {
   const [tabs, setTabs] = useState<TTabCount[]>([]);
+  const [selectedTab, setSelectedTab] = useState<string>("All"); 
+  const [filteredData, setFilteredData] = useState<TRoomData[]>(data); 
 
   useEffect(() => {
     if (data.length > 0) {
-      const updatedTabs = [...tabs];
-      data.forEach((newRoom:TRoomData) => {
+      const updatedTabs: TTabCount[] = [{ title: "All", count: data.length }]; // Add the "All" tab initially
+      data.forEach((newRoom: TRoomData) => {
         const existingTabIndex = updatedTabs.findIndex(
           (tab) => tab.title === newRoom.title
         );
@@ -29,6 +30,16 @@ const FeaturedProjects: React.FC = () => {
       setTabs(updatedTabs);
     }
   }, []);
+
+  useEffect(() => {
+    // Filter the data based on the selected tab
+    if (selectedTab && selectedTab !== "All") {
+      const filtered = data.filter((room) => room.title === selectedTab);
+      setFilteredData(filtered);
+    } else {
+      setFilteredData(data); // Show all data if "All" tab is selected
+    }
+  }, [selectedTab]);
 
   return (
     <Box px={["8", "8", "20"]}>
@@ -47,7 +58,9 @@ const FeaturedProjects: React.FC = () => {
 
         {tabs.length > 0 && (
           <Box width="fit-content" paddingTop="5">
-            <Tabs>
+            <Tabs
+              onChange={(index) => setSelectedTab(tabs[index].title)} // Update the selected tab when changed
+            >
               <TabList>
                 {tabs.map((tab, index) => (
                   <Tab key={index}>
@@ -59,7 +72,7 @@ const FeaturedProjects: React.FC = () => {
           </Box>
         )}
 
-        {data.length > 0 ? (
+        {filteredData.length > 0 ? (
           <Grid
             templateColumns={[
               "1fr",
@@ -70,15 +83,15 @@ const FeaturedProjects: React.FC = () => {
             ]}
             gap={6}
           >
-            {data.map((room: TRoomData) => (
+            {filteredData.map((room: TRoomData) => (
               <ProjectCard key={room.id} room={room} />
             ))}
           </Grid>
         ) : (
-          ""
+          <Text>No projects available for this category.</Text>
         )}
       </Box>
-      {data.length >= 6 ? (
+      {filteredData.length >= 6 ? (
         <Flex justify="center" paddingTop="10">
           <Button
             bg="primary"
