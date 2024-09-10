@@ -23,14 +23,8 @@ export const ListItem: React.FC<stackProps> = (props) => {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ room }) => {
   return (
-    <Box
-      border="1px solid red"
-      width="100%"
-      maxW="400px"
-      paddingTop="10"
-      flexGrow={1}
-    >
-      <Box border="1px solid green" borderRadius="xl" overflow="hidden">
+    <Box width="100%" maxW="400px" paddingTop="10" flexGrow={1}>
+      <Box borderRadius="xl" overflow="hidden">
         <Image
           src={roomImage}
           alt="room"
@@ -39,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ room }) => {
           objectFit="cover"
         />
       </Box>
-      <Box border="1px solid blue" paddingTop="1">
+      <Box paddingTop="1">
         <Flex align="center" justify="space-between" wrap="wrap">
           <Text fontWeight="700" fontSize="xl">
             {room.title}
