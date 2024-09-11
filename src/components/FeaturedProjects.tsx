@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Box, Text, Grid, Button, Flex } from "@chakra-ui/react";
-import { Tabs, TabList, Tab } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Grid,
+  Button,
+  Flex,
+  Tabs,
+  TabList,
+  Tab,
+} from "@chakra-ui/react";
 import SearchBar from "./SearchBar";
 import ProjectCard from "./ProjectCard";
 import { data } from "../dummyData/data";
@@ -9,21 +17,20 @@ import { TTabCount } from "../types";
 
 const FeaturedProjects: React.FC = () => {
   const [tabs, setTabs] = useState<TTabCount[]>([]);
-  const [selectedTab, setSelectedTab] = useState<string>("All"); 
-  const [filteredData, setFilteredData] = useState<TRoomData[]>(data); 
+  const [selectedTab, setSelectedTab] = useState<string>("All");
+  const [filteredData, setFilteredData] = useState<TRoomData[]>(data);
 
   useEffect(() => {
     if (data.length > 0) {
-      const updatedTabs: TTabCount[] = [{ title: "All", count: data.length }]; // Add the "All" tab initially
+      const updatedTabs: TTabCount[] = [{ title: "All", count: data.length }];
+
       data.forEach((newRoom: TRoomData) => {
         const existingTabIndex = updatedTabs.findIndex(
           (tab) => tab.title === newRoom.title
         );
         if (existingTabIndex !== -1) {
-          // If tab already exists, increment the count
           updatedTabs[existingTabIndex].count += 1;
         } else {
-          // If tab does not exist, add a new one with count 1
           updatedTabs.push({ title: newRoom.title, count: 1 });
         }
       });
@@ -59,12 +66,34 @@ const FeaturedProjects: React.FC = () => {
         {tabs.length > 0 && (
           <Box width="fit-content" paddingTop="5">
             <Tabs
-              onChange={(index) => setSelectedTab(tabs[index].title)} // Update the selected tab when changed
+              colorScheme="blue"
+              onChange={(index) => setSelectedTab(tabs[index].title)}
             >
               <TabList>
                 {tabs.map((tab, index) => (
-                  <Tab key={index}>
-                    {tab.title} ({tab.count})
+                  <Tab
+                    key={index}
+                    fontSize="sm"
+                    _selected={{
+                      color: "#007BFF",
+                      borderBottom: "2px solid #007BFF",
+                    }}
+                  >
+                    {tab.title}{" "}
+                    {tab.title !== "All" && (
+                      <Box
+                        as="span"
+                        bg="#667185"
+                        color="#ffffff"
+                        textAlign="center"
+                        width="35px"
+                        height="20px"
+                        marginLeft="5px"
+                        borderRadius="full"
+                      >
+                        {tab.count}
+                      </Box>
+                    )}
                   </Tab>
                 ))}
               </TabList>

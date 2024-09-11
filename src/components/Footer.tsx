@@ -1,6 +1,6 @@
-import { Box, Text, Flex, HStack, Link } from "@chakra-ui/react";
+import { Box, Text, Flex, HStack, Link, Image } from "@chakra-ui/react";
 import React from "react";
-import { linkedin, facebook, instagram, twitter } from "../asset";
+import { linkedin, facebook, instagram, twitter, footerImage } from "../asset";
 
 const Socials = [
   {
@@ -35,6 +35,7 @@ const Footer: React.FC = () => {
       borderRadius="xl"
       px="10"
       mt="28"
+      position="relative"
     >
       <Flex justify="center">
         <Box maxW="400px">
@@ -74,6 +75,15 @@ const Footer: React.FC = () => {
           ))}
         </HStack>
       </Flex>
+      <Image
+        position={"absolute"}
+        src={footerImage}
+        alt="footer"
+        right="8"
+        bottom="0"
+        opacity="0.1"
+        loading="lazy"
+      />
     </Box>
   );
 };

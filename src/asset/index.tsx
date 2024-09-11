@@ -12,6 +12,7 @@ import facebook from "./images/facebook.svg";
 import instagram from "./images/instagram.svg";
 import twitter from "./images/twitter.svg";
 import linkedin from "./images/linkedin.svg";
+import footerImage from "./images/footerImage.svg"
 
 export {
   heroImage,
@@ -28,4 +29,5 @@ export {
   instagram,
   twitter,
   linkedin,
+  footerImage
 };
