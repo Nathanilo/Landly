@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
         textAlign="left"
         position="relative"
         isolation="isolate"
-       
+        maxH="936px"
       >
         <Box
           background="rgba(0,0,0,0.6)"

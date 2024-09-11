@@ -84,6 +84,7 @@ const Navbar: React.FC = () => {
         right="0"
         background="#ffffff"
         zIndex="100"
+        maxW="1920px"
       >
         <Flex justify="space-between" align="center">
           <Box>

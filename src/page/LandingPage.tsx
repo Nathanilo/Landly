@@ -7,9 +7,9 @@ import TopDevelopers from "../components/TopDevelopers.tsx";
 import Testimonials from "../components/Testimonials.tsx";
 import Footer from "../components/Footer.tsx";
 
-const LandingPage:React.FC = () => {
+const LandingPage: React.FC = () => {
   return (
-    <Box>
+    <Box maxWidth="1920px" mx="auto">
       <Navbar />
       <Hero />
       <FeaturedProjects />
