@@ -33,6 +33,7 @@ const Footer: React.FC = () => {
       bg="#000000"
       mx="5"
       borderRadius="xl"
+      borderBottomRadius="0"
       px="10"
       mt="28"
       position="relative"
