@@ -7,6 +7,7 @@ import {
   HStack,
   VStack,
   useDisclosure,
+  DrawerCloseButton,
 } from "@chakra-ui/react";
 import {
   Drawer,
@@ -34,6 +35,7 @@ export const SideBar: React.FC<{
     <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
       <DrawerOverlay />
       <DrawerContent>
+        <DrawerCloseButton />
         <DrawerHeader borderBottomWidth="1px">
           <Link
             href="/"
@@ -46,7 +48,7 @@ export const SideBar: React.FC<{
         </DrawerHeader>
         <DrawerBody marginTop="4">
           <VStack align="flex-start">
-            {links.map((link,id) => (
+            {links.map((link, id) => (
               <Flex align="center" marginTop="4" key={id}>
                 <Link
                   href={link.href}
@@ -105,7 +107,7 @@ const Navbar: React.FC = () => {
           </Box>
           <Box display={["none", "none", "flex"]} mx="5">
             <HStack>
-              {links.map((link,id) => (
+              {links.map((link, id) => (
                 <Flex align="center" marginRight={["2", "2", "6"]} key={id}>
                   <Link
                     href={link.href}

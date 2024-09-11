@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
         alt="footer"
         right="8"
         bottom="0"
-        opacity="0.1"
+        opacity="0.08"
         loading="lazy"
       />
     </Box>
