@@ -131,7 +131,7 @@ const FeaturedProjects: React.FC = () => {
             borderRadius="xl"
             _hover={{ bg: "#ffffff", color: "#000000" }}
           >
-            View All Projects
+            Load more
           </Button>
         </Flex>
       ) : (
